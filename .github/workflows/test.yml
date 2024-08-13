@@ -9,7 +9,9 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14.17.0'
+      - name: install dependencies
+        run: npm install
       - name: build the project
-        run: yarn build
+        run: npm run build
       - name: setup finsh 
         run: echo "hurray!!"
